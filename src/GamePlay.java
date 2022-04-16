@@ -11,8 +11,6 @@ import java.awt.event.KeyListener;
 import javax.swing.Timer;
 import javax.swing.JPanel;
 
-
-
 public class GamePlay extends JPanel implements KeyListener, ActionListener {
     private boolean play = false;
     private int score = 0;
@@ -26,4 +24,28 @@ public class GamePlay extends JPanel implements KeyListener, ActionListener {
     private int ballydir = -2;
 
     private mapbrick map;
+
+    public GamePlay(){
+        map = new mapBrick (3,7);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+
+    }
 }
