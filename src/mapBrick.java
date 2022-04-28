@@ -16,7 +16,7 @@ public class mapBrick {
                 map[i][j] = 1;
             }
         }
-issue with the brick size
+
         brickWidth = 540/col;
         brickHeight = 150/row;
     }
