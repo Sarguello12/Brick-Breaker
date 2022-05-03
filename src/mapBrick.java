@@ -9,18 +9,6 @@ public class mapBrick {
     public int brickWidth;
     public int brickHeight;
 
-    public mapBrick(int row, int col){
-        map = new int [row][col];
-        for(int i = 0; i < map.length; i++){
-            for(int j = 0; j < map[0].length; j++){
-                map[i][j] = 1;
-            }
-        }
-
-        brickWidth = 540/col;
-        brickHeight = 150/row;
-    }
-
     public void draw(Graphics2D g){
         for(int i = 0; i < map.length; i++){
             for(int j = 0; j < map[0].length; j++){
@@ -34,6 +22,18 @@ public class mapBrick {
                 }
             }
         }
+    }
+
+    public mapBrick(int row, int col){
+        map = new int [row][col];
+        for(int i = 0; i < map.length; i++){
+            for(int j = 0; j < map[0].length; j++){
+                map[i][j] = 1;
+            }
+        }
+
+        brickWidth = 540/col;
+        brickHeight = 150/row;
     }
 
     public void setBrickVal(int val, int row, int col){
